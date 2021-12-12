@@ -1,70 +1,33 @@
-# Getting Started with Create React App
+# Bitcoin.com Web App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was made for my Bitcoin.com application. It was made in 4 hours. 
 
-## Available Scripts
+## Installation
 
-In the project directory, you can run:
+git clone the repo <br/>
+in your terminal run <br/>
+npm install <br/>
+wait till packages are installed, then <br/>
+npm start <br/>
 
-### `yarn start`
+and you will see a working demo in your local browser.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Issues
+- Up until this point I have been using Context API for state mangement of my React applications and not Redux because Context API did all that I needed, so I did not use Redux as I did not have the time to relearn Redux and implement it in a clean and meaningful way. <br/>
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- I am new to RSS/XML feeds and this was my first time fetching an XML from a feed
+- I did not find a way to get 24 hour price volume from the Bitcoin.com API (https://github.com/bitcoin-portal/index-api-docs)
+- I have been using Bootstrap mostly as a styling framework so I was also new to Styled components, but I am familiar with changing components styles based on props passed down to children
 
-### `yarn test`
+## Solutions
+- I wrote notes to explain my thought process as much as I could during my time coding this app
+- I found an RSS parser NPM package that eased grabbing data from the RSS feed given to me in the instructions (https://www.npmjs.com/package/rss-parser) 
+- I used the coingecko API along with the Bitcoin index API to get Daily/Week/Month price data
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Lessons learned
+- If I was given more time to complete this project I would be able to implement Redux if it was necessary and refamiliarize myself with Reduxes concepts of state management
+- I enjoyed creating the simple line chart using the endpoints given to me in the instructions. If I was to create this again I would try to include candle stick charts more akin to how actual exchanges display price data like Bitcoin.com and Binance.com
+- If I had more time I would have liked to style it more using my framework of choice Bootstrap or Chakra UI, as the web app is very minimal. 
 
-### `yarn build`
+Built using React, HTML and CSS. Made with React Recharts API and Styled Components. 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
