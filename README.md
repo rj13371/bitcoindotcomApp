@@ -1,4 +1,4 @@
-# Rolands Terminal Portfolio Website
+# Bitcoin.com Web App
 
 This project was made for my Bitcoin.com application. It was made in 4 hours. 
 
